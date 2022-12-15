@@ -1,0 +1,6 @@
+{"prompt":"give me the events and sort them descending ->","completion":" fields @timestamp, @message \n | sort @timestamp desc | limit 20"}
+{"prompt":"Show me events and sort them descending. With a limit of of 200 events ->","completion":" fields @timestamp, @message \n  | sort @timestamp desc \n | limit 200"}
+{"prompt":"give me the events showing the fields: user name, ip address, and message ->","completion":" fields @timestamp, @message \n  \n | sort @timestamp desc \n | limit 20"}
+{"prompt":"Create a query to get the events showing the fields: user name, ip address, and message ->","completion":" fields @timestamp, userIdentity.userName, sourceIPAddress, @message \n | sort @timestamp desc \n | limit 20"}
+{"prompt":"give me the events showing the fields: event name, user name, ip address, and message ->","completion":" fields @timestamp,eventName, userIdentity.userName, sourceIpAddress, @message  \n | sort @timestamp desc \n | limit 20"}
+{"prompt":"give me the events executed by mike showing the fields: event name, user name, ip address, and message ->","completion":" fields @timestamp,eventName, userIdentity.userName, sourceIpAddress, @message \n | filter userIdentity.userName = \"mike\"  \n | sort @timestamp desc \n | limit 20"}
