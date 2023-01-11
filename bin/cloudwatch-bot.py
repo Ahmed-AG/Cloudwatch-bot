@@ -34,8 +34,8 @@ def read_logs(query, Loggroupname):
     subtraction_amount = timedelta(days=10)
     new_epoch_time = current_epoch_time - int(subtraction_amount.total_seconds())
 
-    print(current_epoch_time)
-    print(new_epoch_time)
+    # print(current_epoch_time)
+    # print(new_epoch_time)
     start_query_response = insights_client.start_query(
         logGroupNames=[
             logGroupName,

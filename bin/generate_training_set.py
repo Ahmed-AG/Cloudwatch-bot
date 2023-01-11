@@ -43,9 +43,7 @@ def generate_question(number_of_questions):
     return 0,0
 
 def generate_actions(number_of_actions):
-
     return 0,0
-
 def generate_conditions():
     return 0,0
 def generate_sort():
