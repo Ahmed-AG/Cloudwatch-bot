@@ -1,0 +1,64 @@
+{"prompt":"Show me the fields awsRegion, type, eventType, userName, type, vpcSet, arn, arn, filterSet, requestID, managementEvent, accountId, filterSet, readOnly, eventCategory, eventVersion, eventCategory, eventCategory, sourceIPAddress, recipientAccountId, with a limit of 31 ->","completion":" fields @timestamp, awsRegion, userIdentity.sessionContext.sessionIssuer.type, eventType, userIdentity.sessionContext.sessionIssuer.userName, userIdentity.type, requestParameters.vpcSet, userIdentity.arn, userIdentity.sessionContext.sessionIssuer.arn, requestParameters.filterSet, requestID, managementEvent, userIdentity.accountId, requestParameters.filterSet, readOnly, eventCategory, eventVersion, eventCategory, eventCategory, sourceIPAddress, recipientAccountId, | sort @timestamp desc | limit 31 ###"}
+question:
+        What orders did Mike execute?
+    2. What instructions did Mike carry out?
+    3. What commands did Mike perform?
+    4. What commands did Mike execute?
+    5. What commands did Mike obey?
+    6. What commands did Mike follow?
+    7. What commands did Mike implement?
+    8. What commands did Mike activate?
+    9. What commands did Mike initiate?
+    10. What commands did Mike initiate?
+    1. What did Mike gain access to?
+    2. What did Mike get into?
+    3. What did Mike open?
+    4. What did Mike unlock?
+    5. What did Mike tap into?
+    6. What did Mike enter?
+    7. What did Mike gain entrance to?
+    8. What did Mike gain access to?
+    9. What did Mike gain admittance to?
+    10. What did Mike gain entrance into?
+
+        What was user Mike's action?
+    2. What action did user Mike take?
+    3. What did Mike do?
+    4. What was Mike's action?
+    5. What action did Mike perform?
+    6. What was the action of user Mike?
+    7. What did user Mike accomplish?
+    8. What was the result of user Mike's action?
+    9. What was the outcome of user Mike's activity?
+    10. What was the result of user Mike's behavior?
+        What occurred?
+    2. What transpired?
+    3. What befell?
+    4. What took place?
+    5. What happened here?
+    6. What is the story?
+    7. What is the situation?
+    8. What is the outcome?
+    9. What is the result?
+    10. What is the news?
+    1. Present me the logs
+    2. Demonstrate the logs
+    3. Exhibit the logs
+    4. Display the logs
+    5. Point out the logs
+    6. Reveal the logs
+    7. Produce the logs
+    8. Illustrate the logs
+    9. Showcase the logs
+    10. Expose the logs
+
+fields:
+filters
+    | filter (range>3000)
+    | filter (range>3000 and accountId=9876543210)
+    | filter f1 like /ServiceLog./
+    | filter f1 like "Exception"
+    | filter f1 not like "Exception"
+
+sort
+Limit

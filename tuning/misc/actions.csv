@@ -1,0 +1,115 @@
+activities were conducted,
+operations were performed,
+deeds were done,
+tasks were accomplished, 
+movements were made,
+steps were taken ,
+actions were taken, 
+behaviors were exhibited, 
+initiatives were taken, 
+proceedings were conducted, 
+orders did Mike execute,
+instructions did Mike carry out,
+commands did Mike perform, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+commands did Mike execute, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+commands did Mike implement, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+commands did Mike activate, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+commands did Mike initiate, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+commands did Mike initiate, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike gain access to, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike get into, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike open, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike unlock, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike tap into, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike enter, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike gain entrance to, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike gain access to, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike gain admittance to, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike gain entrance into, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+was user Mike's action, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+action did user Mike take, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did Mike do, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+was Mike's action, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+action did Mike perform, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+was the action of user Mike, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+did user Mike accomplish, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+was the result of user Mike's action, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+was the outcome of user Mike's activity, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+was the result of user Mike's behavior, |filter userIdentity.sessionContext.sessionIssuer.userName like Mike
+executed ActivateUser, |filter eventName like "ActivateUser"
+ran AddDomain, |filter eventName like "AddDomain"
+performed AddUsersToGroup, |filter eventName like "AddUsersToGroup"
+AddUserToGroup, |filter eventName like "AddUserToGroup"
+executed AdminDeleteUser, |filter eventName like "AdminDeleteUser"
+executed executed AdminDeleteUserAttributes, |filter eventName like "AdminDeleteUserAttributes"
+AdminDisableUser, |filter eventName like "AdminDisableUser"
+executed AdminGetUser, |filter eventName like "AdminGetUser"
+executed AdminListGroupsForUser, |filter eventName like "AdminListGroupsForUser"
+executed AdminResetUserPassword, |filter eventName like "AdminResetUserPassword"
+performed AdminSetUserSettings, |filter eventName like "AdminSetUserSettings"
+performed AdminUpdateUserAttributes, |filter eventName like "AdminUpdateUserAttributes"
+executed executed AttachInstances, |filter eventName like "AttachInstances"
+executed AuthenticateUser, |filter eventName like "AuthenticateUser"
+AuthorizeCacheSecurityGroupIngress, |filter eventName like "AuthorizeCacheSecurityGroupIngress"
+AuthorizeClusterSecurityGroupIngress, |filter eventName like "AuthorizeClusterSecurityGroupIngress"
+executed ChangeDomainOwner, |filter eventName like "ChangeDomainOwner"
+executed ChangePassword, |filter eventName like "ChangePassword"
+ChangeResourceRecordSets, |filter eventName like "ChangeResourceRecordSets"
+ChangeTagsForResource, |filter eventName like "ChangeTagsForResource"
+ConsoleLogin, |filter eventName like "ConsoleLogin"
+executed CopyBackupToRegion, |filter eventName like "CopyBackupToRegion"
+executed CopyClusterSnapshot, |filter eventName like "CopyClusterSnapshot"
+executed CopyDbClusterParameterGroup, |filter eventName like "CopyDbClusterParameterGroup"
+performed CopyDBClusterSnapshot, |filter eventName like "CopyDBClusterSnapshot"
+executed CopyDBParameterGroup, |filter eventName like "CopyDBParameterGroup"
+CopyDBSnapshot, |filter eventName like "CopyDBSnapshot"
+CopyImage, |filter eventName like "CopyImage"
+executed CopyOptionGroup, |filter eventName like "CopyOptionGroup"
+executed CopySnapshot, |filter eventName like "CopySnapshot"
+executed CreateAccessKey, |filter eventName like "CreateAccessKey"
+CreateAccount, |filter eventName like "CreateAccount"
+CreateAlias, |filter eventName like "CreateAlias"
+CreateChangeSet, |filter eventName like "CreateChangeSet"
+CreateCluster, |filter eventName like "CreateCluster"
+CreateDirectory, |filter eventName like "CreateDirectory"
+CreateFunction, |filter eventName like "CreateFunction"
+executed CreateGameSession, |filter eventName like "CreateGameSession"
+CreateImage, |filter eventName like "CreateImage"
+performed CreateInstance, |filter eventName like "CreateInstance"
+performed CreateInstanceProfile, |filter eventName like "CreateInstanceProfile"
+performed CreateInstances, |filter eventName like "CreateInstances"
+CreateKeyPair, |filter eventName like "CreateKeyPair"
+CreatePermission, |filter eventName like "CreatePermission"
+performed CreatePermissionSet, |filter eventName like "CreatePermissionSet"
+CreatePipeline, |filter eventName like "CreatePipeline"
+CreateRole, |filter eventName like "CreateRole"
+CreateRoleAlias, |filter eventName like "CreateRoleAlias"
+performed CreateRule, |filter eventName like "CreateRule"
+CreateSAMLProvider, |filter eventName like "CreateSAMLProvider"
+CreateSampleFindings, |filter eventName like "CreateSampleFindings"
+executed CreateScheduledAudit, |filter eventName like "CreateScheduledAudit"
+CreateSecurityConfiguration, |filter eventName like "CreateSecurityConfiguration"
+CreateSecurityGroup, |filter eventName like "CreateSecurityGroup"
+CreateSecurityProfile, |filter eventName like "CreateSecurityProfile"
+executed CreateSnapshot, |filter eventName like "CreateSnapshot"
+CreateSnapshotFromVolumeRecoveryPoint, |filter eventName like "CreateSnapshotFromVolumeRecoveryPoint"
+executed CreateSoftwareConfiguration, |filter eventName like "CreateSoftwareConfiguration"
+CreateSpiceCapacity, |filter eventName like "CreateSpiceCapacity"
+CreateStack, |filter eventName like "CreateStack"
+executed CreateUser, |filter eventName like "CreateUser"
+CreateUserPool, |filter eventName like "CreateUserPool"
+CreateVault, |filter eventName like "CreateVault"
+executed DeactivateMFADevice, |filter eventName like "DeactivateMFADevice"
+DeactivateUser, |filter eventName like "DeactivateUser"
+executed Delete, |filter eventName like "Delete"
+DeleteAccessKey, |filter eventName like "DeleteAccessKey"
+DeleteAccount, |filter eventName like "DeleteAccount"
+executed DeleteAccountAlias, |filter eventName like "DeleteAccountAlias"
+DeleteAccountAuditConfiguration, |filter eventName like "DeleteAccountAuditConfiguration"
+DeleteActivation, |filter eventName like "DeleteActivation"
+DeleteActivity, |filter eventName like "DeleteActivity"
+DeleteAddressBook, |filter eventName like "DeleteAddressBook"
+DeleteApiKey, |filter eventName like "DeleteApiKey"
+executed DeleteArchive, |filter eventName like "DeleteArchive"
+performed Get, |filter eventName like "Get"
+performed Put, |filter eventName like "Put"
