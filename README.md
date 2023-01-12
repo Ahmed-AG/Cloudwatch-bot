@@ -39,3 +39,6 @@ Examples
 ```bash
 python3 bin/cloudwatch-bot.py "show me the event name, ip address and arn with a limit of 7 ->"
 ```
+
+## Reference:
+For more information visit OpenAi's documentation page https://beta.openai.com/docs/api-reference/introduction
