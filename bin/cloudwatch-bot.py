@@ -11,14 +11,18 @@ from datetime import datetime, timedelta
 def get_openAIKey():
     return os.environ['OPENAI_API_KEY']
 
+def get_ft_personal_model():
+    return os.environ['FT_PERSONAL_MODEL']
+
 def get_loggroupname():
     return os.environ['LOGGROUP_NAME']
 
-def get_query(human_request):
+def get_query(human_request, ft_personal_model):
     openai.api_key = get_openAIKey()
     response = openai.Completion.create(
         # model="text-davinci-003",
-        model="davinci:ft-personal:aag-cloudwatch-2023-01-03-18-19-47",
+        # model="davinci:ft-personal:aag-cloudwatch-2023-01-03-18-19-47",
+        model=ft_personal_model,
         stop="###",
         prompt=human_request,
         temperature=0,
@@ -81,7 +85,7 @@ if __name__ == "__main__":
     # query = 'fields @timestamp, userIdentity.arn, sourceIPAddress, eventName | sort @timestamp desc | limit 20'
     # query = '\n\nfields @timestamp | sort @timestamp desc | limit 200'
 
-    query = get_query(human_request)
+    query = get_query(human_request, get_ft_personal_model())
 
     logGroupName = get_loggroupname()
     response = read_logs(query, logGroupName)
