@@ -4,7 +4,6 @@
 2. Sign up to OpenAI at https://openai.com and create an API Key
 
 ## Tuning your own model
-### training Set
 OpenAI allows you to tune your own versions of their model. for example you can tune the default davinci model on a specific use case
 
 To do that:
@@ -18,7 +17,7 @@ Example:
 openai api fine_tunes.create -t <tuning-file>.jsonl -m davinci --suffix <Personal Identifier>
 ```
 
-## use
+## Use
 
 2. set your envinroment with the following three parameters
 ```bash
