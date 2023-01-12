@@ -1,5 +1,39 @@
 {"prompt":"Show me the fields awsRegion, type, eventType, userName, type, vpcSet, arn, arn, filterSet, requestID, managementEvent, accountId, filterSet, readOnly, eventCategory, eventVersion, eventCategory, eventCategory, sourceIPAddress, recipientAccountId, with a limit of 31 ->","completion":" fields @timestamp, awsRegion, userIdentity.sessionContext.sessionIssuer.type, eventType, userIdentity.sessionContext.sessionIssuer.userName, userIdentity.type, requestParameters.vpcSet, userIdentity.arn, userIdentity.sessionContext.sessionIssuer.arn, requestParameters.filterSet, requestID, managementEvent, userIdentity.accountId, requestParameters.filterSet, readOnly, eventCategory, eventVersion, eventCategory, eventCategory, sourceIPAddress, recipientAccountId, | sort @timestamp desc | limit 31 ###"}
 question:
+Who logged in"
+
+    1. Who has logged in?
+    2. Who is logged in?
+    3. Who has accessed the system?
+    4. Who is accessing the system?
+    5. Who has signed in?
+    6. Who is signed in?
+    7. Who has entered the system?
+    8. Who is entering the system?
+    9. Who has connected?
+    10. Who is connecting?
+        Who invoked lambda <Lambda Name>?"
+    1. Who called upon lambda <Lambda Name>?
+    2. Who summoned lambda <Lambda Name>?
+    3. Who activated lambda <Lambda Name>?
+    4. Who initiated lambda <Lambda Name>?
+    5. Who triggered lambda <Lambda Name>?
+    6. Who invoked lambda <Lambda Name>?
+    7. Who launched lambda <Lambda Name>?
+    8. Who started lambda <Lambda Name>?
+    9. Who brought forth lambda <Lambda Name>?
+    10. Who conjured lambda <Lambda Name>?
+    What actions came from IP 192.168.0.1
+        1. What activities were conducted from IP 192.168.0.1?
+    2. What operations were performed from IP 192.168.0.1?
+    3. What deeds were done from IP 192.168.0.1?
+    4. What tasks were accomplished from IP 192.168.0.1?
+    5. What movements were made from IP 192.168.0.1?
+    6. What steps were taken from IP 192.168.0.1?
+    7. What actions were taken from IP 192.168.0.1?
+    8. What behaviors were exhibited from IP 192.168.0.1?
+    9. What initiatives were taken from IP 192.168.0.1?
+    10. What proceedings were conducted from IP 192.168.0.1?
         What orders did Mike execute?
     2. What instructions did Mike carry out?
     3. What commands did Mike perform?
@@ -53,7 +87,8 @@ question:
     10. Expose the logs
 
 fields:
-filters
+filters:
+
     | filter (range>3000)
     | filter (range>3000 and accountId=9876543210)
     | filter f1 like /ServiceLog./
