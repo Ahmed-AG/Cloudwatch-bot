@@ -13,17 +13,22 @@ export OPENAI_API_KEY=<Open AI Key>
 export AWS_DEFAULT_REGION=<Region>
 export LOGGROUP_NAME=<Cloud Trail LogGroup to search>
 ```
-2. Create your sample tunning JSONL file with few hundreds examples
+2. Install OpenAI tools
+```bash
+pip install openai
+```
+
+3. Create your sample tunning JSONL file with few hundreds examples
 Example:
 ```bash
 {"prompt":"Show me the fields eventName, eventSource, source IP, with a limit of 79 ->","completion":" fields @timestamp, eventName, eventSource, sourceIPAddress | sort @timestamp desc | limit 79 ###"}
 ```
-3. Create your tuned model
+4. Create your tuned model
 ```bash
 openai api fine_tunes.create -t <tuning-file>.jsonl -m davinci --suffix <Personal Identifier>
 ```
 
-4. Set the value of FT_PERSONAL_MODEL to the newly created model name
+5. Set the value of FT_PERSONAL_MODEL to the newly created model name
 ```bash
 export FT_PERSONAL_MODEL=<Model Name>
 ```
