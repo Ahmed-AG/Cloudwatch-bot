@@ -17,6 +17,22 @@ Example:
 openai api fine_tunes.create -t <tuning-file>.jsonl -m davinci --suffix <Personal Identifier>
 ```
 
+3. Update the code to use your newly created model instead of the default `text-davinci-003`
+```
+def get_query(human_request):
+    openai.api_key = get_openAIKey()
+    response = openai.Completion.create(
+        # model="text-davinci-003",
+        model="davinci:ft-personal:aag-cloudwatch-2023-01-03-18-19-47",
+        stop="###",
+        prompt=human_request,
+        temperature=0,
+        max_tokens=250,
+    )
+    print("OpenAI Query: " + response['choices'][0]['text'])
+    return response['choices'][0]['text']
+
+```
 ## Use
 
 2. set your envinroment with the following three parameters
