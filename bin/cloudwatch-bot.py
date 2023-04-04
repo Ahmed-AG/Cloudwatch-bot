@@ -21,7 +21,6 @@ def get_query(human_request, ft_personal_model):
     openai.api_key = get_openAIKey()
     response = openai.Completion.create(
         # model="text-davinci-003",
-        # model="davinci:ft-personal:aag-cloudwatch-2023-01-03-18-19-47",
         model=ft_personal_model,
         stop="###",
         prompt=human_request,
@@ -38,11 +37,13 @@ def read_logs(query, Loggroupname):
     subtraction_amount = timedelta(days=10)
     new_epoch_time = current_epoch_time - int(subtraction_amount.total_seconds())
 
-    # print(current_epoch_time)
-    # print(new_epoch_time)
     start_query_response = insights_client.start_query(
+        # Hard coded groups
         logGroupNames=[
-            logGroupName,
+            'vpcflow',
+            'cloudtrail',
+            'access_logs',
+            'secure'
         ],
         startTime=new_epoch_time,
         endTime=current_epoch_time,
@@ -76,14 +77,6 @@ def parse_json_to_tab(response):
 
 if __name__ == "__main__":
     human_request = sys.argv[1]
-    # print(time.time())
-    # # subtraction_amount = timedelta(days=10)
-    # # new_epoch_time = time.time() - subtraction_amount.total_seconds()
-    # # print(new_epoch_time)
-    # exit()
-    # Define the query and Log Group Name
-    # query = 'fields @timestamp, userIdentity.arn, sourceIPAddress, eventName | sort @timestamp desc | limit 20'
-    # query = '\n\nfields @timestamp | sort @timestamp desc | limit 200'
 
     query = get_query(human_request, get_ft_personal_model())
 
@@ -91,5 +84,5 @@ if __name__ == "__main__":
     response = read_logs(query, logGroupName)
     response_csv = parse_json_to_csv(response)
     response_tab = parse_json_to_tab(response)
-    # print(json.dumps(response)) 
-    print(response_tab)
+    print(response_tab)    
+    # print(response_tab)
